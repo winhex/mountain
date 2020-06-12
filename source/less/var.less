@@ -1,0 +1,46 @@
+// переменные
+
+ // отладка
+ img:not([alt]), label:not([for]), input[type=submit]:not([value]) {
+      outline: 2px solid red;
+ }
+
+
+ // миксины
+
+.reset-list() {
+     margin:0;
+     padding:0;
+     list-style: none;
+}
+
+.center-block() {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  img {
+    max-width: 100%;
+    // height: auto;
+  }
