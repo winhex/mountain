@@ -9,7 +9,16 @@ body {
 .page-header {
 	background: url(../img/mountain.jpg) no-repeat;
 	min-height: 650px;
-	padding-top: 35px;
+	color: #FCFCFC;
+	font-family: Roboto;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 19px;
+
+	&__logo {
+		margin-top: 35px;
+	}
+
 }
 
 .main-nav {
@@ -18,18 +27,67 @@ body {
 	margin: 0 auto;
 
 
+
 	&__list {
 		display: flex;
 		.reset-list;
+		margin-left: 100px;
+		margin-top: 35px;
+
 
 	}
 
 	&__link {
 		text-decoration: none;
-		color: #FCFCFC;
-		font-family: Roboto;
-		font-style: normal;
-		font-size: 16px;
-		line-height: 19px;
+		color:inherit;
+
+		&:hover {
+			
+			text-decoration: underline;
+		}
+		
+	}
+
+	&__item {
+		margin-right: 32px;
+	}
+
+	&__contacts {
+		margin-left: 265px;
+	}
+}
+
+.contacts {
+	margin-left: auto;
+	margin-top: 27px;
+
+
+	&__phone {
+		color:inherit;
+	}
+
+	&__item {
+		display: inline-block;
+		width:35px;
+		height: 35px;
+		border-radius: 50%;
+		background-color: rgba(252, 252, 252, 0.4);
+		background-repeat: no-repeat;
+		background-position: center;
+
+		&:hover {
+			filter: invert(100%);
+		}
+
+		&--search {
+			background-image: url(../img/lens.svg);
+			margin-right: 27px;
+
+		}
+
+		&--user {
+			background-image: url(../img/men.svg);
+
+		}
 	}
 }
