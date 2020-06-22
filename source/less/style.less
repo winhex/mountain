@@ -4,13 +4,16 @@
 body {
 	max-width: 1366px;
 	margin: 0 auto;
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: normal;
 }
 
 .page-header {
 	background: url(../img/mountain.jpg) no-repeat;
 	min-height: 650px;
 	color: #FCFCFC;
-	font-family: Roboto;
+	font-family: Roboto, Arial, Helvetica, sans-serif;
 	font-style: normal;
 	font-size: 16px;
 	line-height: 19px;
@@ -128,7 +131,7 @@ body {
 	}
 
 	&__header {
-		font-family: Oswald;
+		font-family: Oswald, sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 52px;
@@ -138,7 +141,7 @@ line-height: 115%;
 
 	&__about {
 		max-width: 350px;
-		font-family: Roboto;
+		font-family: Roboto, sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
@@ -167,18 +170,65 @@ line-height: 150%;
 		justify-content: space-between;
 
 
-}
+    }
 
-	}
+    &__country {
+    	display: flex;
+        justify-content: space-between;
+    }
+
+	
 
 	&__card {
 		width:370px;
 		height: 370px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	&__country-name {
+		font-family: Roboto, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			background: url(../img/pin.svg) no-repeat;
+			width: 13px;
+			height: 16px;
+			left: -20px;
+            top: 3px;
+
+		}
+	}
+
+	&__favorites {
+		display: inline-block;
+		width:35px;
+		height: 35px;
+		border-radius: 50%;
+		background-color: rgba(252, 252, 252, 0.4);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-image: url(../img/flag.svg);
+
+		
+
+		&:hover {
+			filter: invert(100%);
+		}
+	}
+
+	&__details {
+		width: 100%;
 	}
 }
 
 
 .card1 {
-	//background: url(../img/beluha.jpg) no-repeat center;
+	background: url(../img/beluha.jpg) no-repeat center;
 
 }
